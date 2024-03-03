@@ -39,7 +39,9 @@ if [ ! -z "$REPOSITORY_REF" ]; then
   cat << EOT > ~/.bashrc.d/repository.bash
 export REPOSITORY_OWNER='${REPOSITORY_OWNER}'
 export REPOSITORY_NAME='${REPOSITORY_NAME}'
-export REPOSITORY_REF='${REPOSITORY_REF}'
+# export REPOSITORY_REF='${REPOSITORY_REF}'
+export REPOSITORY_REF='main'
+
 EOT
 fi
 
