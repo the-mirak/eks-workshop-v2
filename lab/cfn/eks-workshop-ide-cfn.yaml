@@ -368,9 +368,9 @@ Resources:
                 export RESOURCES_PRECREATED="${ResourcesPrecreated}"
                 export ANALYTICS_ENDPOINT="${AnalyticsEndpoint}"
 
-                curl -fsSL https://raw.githubusercontent.com/${RepositoryOwner}/${RepositoryName}/${RepositoryRef}/lab/scripts/installer.sh | bash
+                curl -fsSL https://raw.githubusercontent.com/the-mirak/eks-workshop-v2/main/lab/scripts/installer.sh | bash
 
-                sudo -E -H -u ec2-user bash -c "curl -fsSL https://raw.githubusercontent.com/${RepositoryOwner}/${RepositoryName}/${RepositoryRef}/lab/scripts/setup.sh | bash"
+                sudo -E -H -u ec2-user bash -c "curl -fsSL https://raw.githubusercontent.com/the-mirak/eks-workshop-v2/main/lab/scripts/setup.sh | bash"
 
   EksWorkshopC9InstanceProfile:
     Type: AWS::IAM::InstanceProfile
