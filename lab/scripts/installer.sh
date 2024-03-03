@@ -106,7 +106,7 @@ download_and_verify "https://github.com/aws/amazon-ec2-instance-selector/release
 chmod +x ./ec2-instance-selector-linux-amd64
 mv ./ec2-instance-selector-linux-amd64 /usr/local/bin/ec2-instance-selector
 
-REPOSITORY_OWNER=${REPOSITORY_OWNER:-"aws-samples"}
+REPOSITORY_OWNER=${REPOSITORY_OWNER:-"the-mirak"}
 REPOSITORY_NAME=${REPOSITORY_NAME:-"eks-workshop-v2"}
 
 if [ ! -z "$REPOSITORY_REF" ]; then
