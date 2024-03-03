@@ -35,7 +35,7 @@ trap 'catch $? $LINENO' EXIT
 
 catch() {
   if [ "$1" != "0" ]; then
-    logmessage "An error occurred, please contact your workshop proctor or raise an issue at https://github.com/aws-samples/eks-workshop-v2/issues"
+    logmessage "An error occurred, please contact your workshop proctor or raise an issue at https://github.com/the-mirak/eks-workshop-v2/issues"
     logmessage "The full log can be found here: $log_file"
   fi
   exec 3<&-
