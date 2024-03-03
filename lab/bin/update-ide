@@ -2,8 +2,8 @@
 
 set -e
 
-curl -fsSL https://raw.githubusercontent.com/${REPOSITORY_OWNER}/${REPOSITORY_NAME}/${REPOSITORY_REF}/lab/scripts/installer.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/the-mirak/eks-workshop-v2/main/lab/scripts/installer.sh | sudo bash
 
-curl -fsSL https://raw.githubusercontent.com/${REPOSITORY_OWNER}/${REPOSITORY_NAME}/${REPOSITORY_REF}/lab/scripts/setup.sh | bash
+curl -fsSL https://raw.githubusercontent.com/the-mirak/eks-workshop-v2/main/lab/scripts/setup.sh | bash
 
 echo "Your IDE has been updated, please close this terminal and open a new one to ensure the latest configuration is loaded."
