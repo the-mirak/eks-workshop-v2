@@ -52,9 +52,10 @@ REPOSITORY_REF=${REPOSITORY_REF:-""}
 if [ ! -z "${REPOSITORY_REF}" ]; then
   rm -rf $repository_path
 
-  logmessage "Refreshing copy of workshop repository from GitHub..."
+  logmessage "---Refreshing copy of workshop repository from GitHub..."
 
-  git clone --quiet https://github.com/$REPOSITORY_OWNER/$REPOSITORY_NAME.git $repository_path
+  #git clone --quiet https://github.com/$REPOSITORY_OWNER/$REPOSITORY_NAME.git $repository_path
+  git clone --quiet https://github.com/the-mirak/eks-workshop-v2.git $repository_path
   (cd $repository_path && git checkout --quiet "${REPOSITORY_REF}")
 
   logmessage ""
