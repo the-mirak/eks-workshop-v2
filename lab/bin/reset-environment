@@ -56,7 +56,8 @@ if [ ! -z "${REPOSITORY_REF}" ]; then
 
   #git clone --quiet https://github.com/$REPOSITORY_OWNER/$REPOSITORY_NAME.git $repository_path
   git clone --quiet https://github.com/the-mirak/eks-workshop-v2.git $repository_path
-  (cd $repository_path && git checkout --quiet "${REPOSITORY_REF}")
+  (cd $repository_path && git checkout --quiet main)
+  #(cd $repository_path && git checkout --quiet "${REPOSITORY_REF}")
 
   logmessage ""
 
